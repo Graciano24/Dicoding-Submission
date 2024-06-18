@@ -1,0 +1,217 @@
+/* CSS untuk styling */
+
+/* Mengatur font family menjadi Arial atau sans-serif */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0; /* Menghapus margin */
+    padding: 0; /* Menghapus padding */
+    background-image: url('asd.jpg'); /* Menambahkan gambar GIF sebagai latar belakang */
+    background-size: cover; /* Mengatur gambar latar belakang agar menutupi seluruh area body */
+}
+
+/* Mengatur container menjadi flex container dengan arah kolom */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mengatur navbar */
+.navbar {
+    background-color: #2cd9f0; /* Warna latar belakang navbar */
+    display: flex; /* Mengatur navbar menjadi flex container */
+    justify-content: space-between; /* Menyebarkan ruang di antara elemen di dalam navbar */
+    align-items: center; /* Mengatur elemen di dalam navbar agar berada di tengah secara vertikal */
+    padding: 10px 20px; /* Padding pada navbar */
+}
+
+/* Mengatur gambar user di sebelah kanan navbar */
+.navbar-right img {
+    width: 30px; /* Menentukan lebar gambar user */
+    height: auto; /* Mengatur tinggi gambar secara otomatis */
+    margin-left: 10px; /* Memberikan margin kiri pada gambar user */
+}
+
+/* Mengatur link di dalam navbar */
+.navbar a {
+    color: #000000; /* Warna teks link */
+    text-decoration: none; /* Menghapus dekorasi link */
+    font-size: 20px; /* Ukuran font teks link */
+}
+
+/* Mengatur posisi tengah untuk navbar */
+.navbar-center {
+    flex: 1; /* Menempatkan elemen di tengah navbar */
+    text-align: center; /* Mengatur teks menjadi posisi tengah */
+}
+
+/* Mengatur posisi kanan untuk elemen navbar */
+.navbar-right {
+    display: flex; /* Mengatur elemen navbar-right menjadi flex container */
+    align-items: center; /* Mengatur elemen di dalam navbar-right agar berada di tengah secara vertikal */
+}
+
+/* CSS for dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px; /* Menambahkan jarak kanan antara dropdown */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {/*Unruk blok*/
+    background-color: #2ab4eb;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Mengatur content */
+.content {
+    display: flex; /* Mengatur content menjadi flex container */
+    justify-content: space-between; /* Menyebarkan ruang di antara elemen di dalam content */
+    color: #000000; /* Mengatur warna teks*/
+    flex-grow: 1; /* Menambahkan properti flex-grow agar content bisa berkembang */
+}
+
+/* Mengatur city-box */
+.city-box {
+    text-align: center; /* Mengatur teks menjadi posisi tengah */
+    padding: 10px; /* Menghapus padding */
+    border: 0px solid #ccc; /* Mengatur border city-box */
+    width: 90%; /* Bagian utama mengambil 90% lebar layar */
+    height: 560px; /* Menentukan tinggi city-box */
+}
+
+/* Mengatur heading di dalam city-box */
+.city-box h2 {
+    margin-top: 0; /* Menghapus margin atas */
+}
+
+/* Mengatur city-details */
+.city-details {
+    display: flex; /* Mengatur city-details menjadi flex container */
+    flex-direction: column; /* Mengatur arah kolom untuk elemen di dalam city-details */
+}
+
+/* Mengatur city-info */
+.city-info {
+    display: flex; /* Mengatur city-info menjadi flex container */
+    justify-content: center; /* Mengatur elemen di dalam city-info agar berada di tengah secara horizontal */
+    align-items: center; /* Mengatur elemen di dalam city-info agar berada di tengah secara vertikal */
+    margin-bottom: 20px; /* Menambahkan margin bawah antara setiap city-info */
+}
+
+/* Mengatur jarak antara info city 1 dan info city 2 */
+.city-info + .city-info {
+    margin-top: 5px; /* Menambahkan jarak atas antara setiap pasangan city-info */
+}
+
+/* Mengatur arah elemen di dalam city-info kedua */
+.city-info:nth-child(2) {
+    flex-direction: row-reverse; /* Memutar urutan elemen untuk city-info kedua */
+}
+
+/* Mengatur gambar di dalam city-info 1*/
+.city-imagea img {
+    width: 200px; /* Menentukan lebar gambar */
+    height: auto; /* Mengatur tinggi gambar secara otomatis */
+    margin-right: 20px; /* Memberikan margin kanan pada gambar */
+}
+
+/* Mengatur gambar di dalam city-info 2*/
+.city-image img {
+    width: 200px; /* Menentukan lebar gambar */
+    height: 170px; /* Menentukan tinggi gambar */
+    margin-right: 10px; /* Memberikan margin kanan pada gambar */
+    margin-left: 25px; /* Memberikan margin kiri pada gambar */
+}
+
+/* Mengatur deskripsi di dalam city-box */
+.city-description p {
+    text-align: justify; /* Mengatur tata letak teks menjadi rata kiri kanan */
+}
+
+/* Mengatur side */
+.side {
+    width: 20%; /* Menentukan lebar box sebelah kanan dan footer */
+    height: 400px; /* Menentukan tinggi box sebelah kanan dan footer */
+    padding: 20px; /* Padding pada side */
+    border: 1px solid #000000; /* Mengatur border pada side */
+    display: flex; /* Mengatur side menjadi flex container */
+    flex-direction: column; /* Mengatur arah kolom untuk elemen di dalam side */
+    justify-content: center; /* Mengatur elemen di dalam side agar berada di tengah secara vertikal */
+    align-items: center; /* Mengatur elemen di dalam side agar berada di tengah secara horizontal */
+}
+
+/* Mengatur teks di dalam side */
+.side p{
+    margin: 10px 0; /* Memberikan margin pada teks */
+    text-align: justify; /* Mengatur teks menjadi rata tengah */
+}
+
+/* Mengatur gambar di dalam side */
+.side-image img {
+    width: 100%; /* Menentukan lebar gambar agar sesuai dengan lebar elemen side */
+    height: auto; /* Mengatur tinggi gambar secara otomatis sesuai dengan proporsi aslinya */
+    display: block; /* Mengubah gambar menjadi blok agar margin otomatis berfungsi */
+    margin: auto; /* Mengatur margin otomatis agar gambar berada di tengah secara horizontal dan vertikal */
+}
+
+/* Mengatur footer */
+.foot {
+    position: fixed; /* Mengatur posisi footer */
+    bottom: 0; /* Menempatkan footer di bagian bawah layar */
+    width: 97%; /* Menentukan lebar footer */
+    height: 2%;
+    font-size: 70%;
+    padding: 20px; /* Padding pada footer */
+    border: 0px solid #000000; /* Mengatur border pada footer */
+    display: flex; /* Mengatur footer menjadi flex container */
+    justify-content: center; /* Mengatur elemen di dalam footer agar berada di tengah secara horizontal */
+    align-items: center; /* Mengatur elemen di dalam footer agar berada di tengah secara vertikal */
+    background-color: #198494; /* Warna latar belakang footer */
+}
+
+
+/* Mengatur teks di dalam footer */
+.foot p {
+    margin: 10px 0; /* Memberikan margin pada teks */
+    text-align: center; /* Mengatur teks menjadi rata tengah */
+    color: #000000;
+}
+
+
+
+/* Media queries untuk responsif */
+@media screen and (max-width: 768px) {
+    .city-box {
+        width: 90%; /* Menyesuaikan lebar city-box dengan lebar layar */
+        height: auto; /* Mengatur tinggi city-box agar dinamis */
+    }
+
+    .side {
+        width: 90%; /* Menyesuaikan lebar side dengan lebar layar */
+        height: 50%; /* Mengatur tinggi side agar dinamis */
+    }
+
+    .foot {
+        width: 100%; /* Menyesuaikan lebar footer dengan lebar layar */
+        height: 0.5%;
+    }
+}
